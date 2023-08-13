@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #239d6c;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  
+  #updateTitleInput {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #updateTitleButton {
+    padding: 0.5rem 1rem;
+    background-color: #044c86;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+
+  }
+  
+  /* Main styles */
+  main {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Trello board styles */
+  .trello-board {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    
+  }
+  
+  /* Section styles */
+  .section {
+    text-align: center;
+    flex-grow: 1;
+    background-color: #47afc4;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #afd173;
+    padding: 0.5rem;
+    border: 1px solid #cb7d30;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .card:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Control panel styles */
+  aside {
+    padding: 5rem;
+  }
+  
+  .control-panel {
+    background-color: #239d6c;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .control-panel h2 {
+    text-align: center;
+    border: 10px solid #ccc;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Control form styles */
+  .control-forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .control-method {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .control-method h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 14px 80px;
+    background-color: #e21a0b;
+    color: #ffffff;
+    border: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  position: center;
+  }
+  button:hover {
+    background-color: rgb(19, 90, 172);
+  }
+  
+ 
+  
+  form select {
+    appearance: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 18px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .section {
+      max-width: 100%;
+      text-align: center;
+      flex-grow: 1;
+      background-color: #47afc4;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+    }
+  
+    .control-forms {
+      flex-direction: column;
+    }
+  
+    .control-method {
+      max-width: 100%;
+    }
+  }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+   
+
+}
+
+.card-id {
+    color: #888;
+    margin: 0;
+}
+
+.delete-card-btn {
+    background-color: #ff5252;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-name,
+.card-description {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    
+}
+
+.card-description {
+    resize: vertical;
+    height: 80px;
+}
+
+.card-name:focus,
+.card-description:focus {
+    border-color: #3498db;
+    outline: none;
+}
